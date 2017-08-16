@@ -8,12 +8,12 @@
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и Видео</li>
-          <li><a href="">Карта штата</li>
-          <li><a href="">Гостиница</li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиница</a></li>
         </ul>
-        <a href=""> <img src="http://placehold.it/150x100"> </a>
+        <a href="index.html"> <img alt="logo" src="http://placehold.it/150x100"> </a>
      </nav>
    </header>
   <main>
@@ -29,71 +29,54 @@
          <li> <a href="#"> По рейтингу </a></li>
        </ul>
        <div class="ordering-direction">
-         <a href="#"><img src="http://placehold.it/10x10"><a>
-         <a href="#"><img src="http://placehold.it/10x10"><a>
+         <a href="#"><img alt="Up" src="http://placehold.it/10x10"></a>
+         <a href="#"><img alt="Down" src="http://placehold.it/10x10"></a>
        </div>
-     </section>
-     <article class="hostel-card">
-       <!--Я внутрь article положила таблицу. Может быть здесь это неуместно, так как
-     не является в полном смысле таблицей. Дивы здесь более уместны?
-    Или вообще лучше сделать одну большую таблицу, где на каждую гостиницу будет свой <tr>?-->
-     <table>
-       <tr>
-         <td rowspan="3"><img src="http://placehold.it/150x100"</td>
-         <td colspan="2">Amara Resort & Spa </td>
-         <td><img src="http://placehold.it/30x15"></td> <!--Картинка со звёздами-->
-       </tr>
-       <tr>
-         <td>Гостиница</td>
-         <td>от 3500 Р.</td>
-         <td></td>
-      </tr>
-       <tr>
-         <td><a href="#">Подробнее</a></td>
-         <td><a href="#">Забронировать</a></td>
-         <td>Рейтинг 8,5</td>
-      </tr>
-      </table>
+    </section>
+    <section class="hotels">
+     <article class="hotel-card">
+       <div class="hotel-card-image"> <img alt="Amara Resort & Spa" src="http://placehold.it/150x100"></div>
+         <div class="hotel-card-description">
+           <p>Amara Resort & Spa</p>
+           <p>Гостиница</p>
+           <p>от 3500 Р.</p>
+           <a class="hotel-card-detail" href="#">Подробнее</a>
+           <a class="hotel-card-book" href="#">Забронировать</a>
+         </div>
+         <div class="hostel-card-rating">
+           <img alt ="4 stars" src="http://placehold.it/30x15"> <!--Картинка со звёздами-->
+           <p>Рейтинг 8,5</p>
+         </div>
     </article>
-    <article class="hostel-card">
-    <table>
-      <tr>
-        <td rowspan="3"><img src="http://placehold.it/150x100"</td>
-        <td colspan="2">Desert Quail Inn </td>
-        <td><img src="http://placehold.it/30x15"></td> <!--Картинка со звёздами-->
-      </tr>
-      <tr>
-        <td>Мотель</td>
-        <td>от 2000 Р.</td>
-        <td></td>
-     </tr>
-      <tr>
-        <td><a href="#">Подробнее</a></td>
-        <td><a href="#">Забронировать</a></td>
-        <td>Рейтинг 8,9</td>
-     </tr>
-     </table>
+    <article class="hotel-card">
+      <div class="hotel-card-image"><img alt="Desert Quail Inn" src="http://placehold.it/150x100"></div>
+        <div class="hotel-card-description">
+          <p>Desert Quail Inn</p>
+          <p>Мотель</p>
+          <p>от 2000 Р.</p>
+          <a class="hotel-card-detail" href="#">Подробнее</a>
+          <a class="hotel-card-book" href="#">Забронировать</a>
+        </div>
+        <div class="hostel-card-rating">
+          <img alt="2 stars" src="http://placehold.it/30x15"> <!--Картинка со звёздами-->
+          <p>Рейтинг 8,9</p>
+        </div>
    </article>
-
-   <article class="hostel-card">
-   <table>
-     <tr>
-       <td rowspan="3"><img src="http://placehold.it/150x100"</td>
-       <td colspan="2">Villas At Poco Diablo </td>
-       <td><img src="http://placehold.it/30x15"></td> <!--Картинка со звёздами-->
-     </tr>
-     <tr>
-       <td>Апартаменты</td>
-       <td>от 4000 Р.</td>
-       <td></td>
-    </tr>
-     <tr>
-       <td><a href="#">Подробнее</a></td>
-       <td><a href="#">Забронировать</a></td>
-       <td>Рейтинг 8,5</td>
-    </tr>
-    </table>
+   <article class="hotel-card">
+     <div class="hotel-card-image"><img alt="Villas At Poco Diablo" src="http://placehold.it/150x100"></div>
+       <div class="hotel-card-description">
+         <p>Villas At Poco Diablo</p>
+         <p>Апартаменты</p>
+         <p>от 4000 Р.</p>
+         <a class="hotel-card-detail" href="#">Подробнее</a>
+         <a class="hotel-card-book" href="#">Забронировать</a>
+       </div>
+       <div class="hostel-card-rating">
+         <img alt="3 stars" src="http://placehold.it/30x15"> <!--Картинка со звёздами-->
+         <p>Рейтинг 9,2</p>
+       </div>
   </article>
+</section>
 </main>
    <footer class="main-footer">
      <p class="footer-hashtag">#Visitsedona</p>
@@ -104,7 +87,8 @@
      </ul>
      <div class="footer-website-by">
       <p>Website by</p>
-      <img src="http://placehold.it/150x100">
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img alt="HTML Academy" src="http://placehold.it/150x100">
+      </a>
      </div>
    </footer>
    </html>
