@@ -19,6 +19,7 @@
    </header>
     <main class="container">
       <section class="welcome">
+        <h1 class="visually-hidden">Седона</h1>
       </section>
       <b>Седона-небольшой городок в Аризоне, заслуживающий большего.</b>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -74,7 +75,24 @@
         </div>
         <b class="hotel-search"> Заинтересовались </b>
         <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
-        <!-- Здесь будет форма "Поиск гостиницы в седоне", сделаю позже.-->
+        <form class="hostel-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <p>Поиск гостиницы в Седоне</p>
+          <label for="id-date-from">Дата заезда:</label>
+          <input type="text" name="date-from" id="id-date-from" value="24 апреля 2016">
+          <button>Календарь</button>
+          <label for="id-date-to">Дата выезда:</label>
+          <input type="text" name="date-to" id="id-date-to" value="4 июля 2016">
+          <button>Календарь</button>
+          <label for="adults">Взрослые:</label>
+          <button>-</button>
+          <input type="number" min="1" max="30" id="adults" name="adult" value="2">
+          <button>+</button>
+          <label for="kids">Дети:</label>
+          <button>-</button>
+          <input type="number" min="0" max="30" id="kids" name="kids" value="0">
+          <button>+</button>
+          <input type="submit" name="find" value="Найти">
+        </form>
         <img alt="Sedona-map" src="img/map.jpg">
         </main>
         <footer class="main-footer">

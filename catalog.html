@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -18,7 +19,32 @@
    </header>
   <main>
      <section class="forms">
-       <!--Здесь будет фоновая картинка и формы для фильтров. -->
+       <div class="infrastructure">
+        <p>Инфраструктура:</p>
+        <input type="checkbox" name="pool" value="pool" id="id-pool" checked>
+        <label for="id-pool">Бассейн</label>
+        <input type="checkbox" name="parking" value="parking" id="id-parking">
+        <label for="id-parking">Парковка</label>
+        <input type="checkbox" name="wi-fi" value="wi-fi" id="id-wi-fi">
+        <label for="id-wi-fi">Wi-Fi</label>
+       </div>
+       <div class="lodging-type">
+        <p>Тип жилья:</p>
+        <input type="checkbox" name="hotel" value="hotel" id="id-hotel" checked>
+        <label for="id-hotel">Гостиница</label>
+        <input type="checkbox" name="motel" value="motel" id="id-motel" checked>
+        <label for="id-motel">Мотель</label>
+        <input type="checkbox" name="apartments" value="apartments" id="id-apartments" checked>
+        <label for="id-apartments">Апартаменты</label>
+       </div>
+       <div class="cost">
+         <p>Стоимость в сутки (Р):></p>
+         <p>от 0</p>
+         <p>до 3000</p>
+         <input type="range" min="0" max="4000">
+         <!-- Я не знаю как сделать 2 ползунка range и как их привязать к значениям "от 0" и "до 3000"-->
+         <input type="submit" value="Показать">
+      </div>
      </section>
      <section class="ordering">
        <div class="result">Найдено 3</div>
@@ -29,8 +55,11 @@
          <li> <a href="#"> По рейтингу </a></li>
        </ul>
        <div class="ordering-direction">
-         <a href="#"><img alt="Up" src="http://placehold.it/10x10"></a>
-         <a href="#"><img alt="Down" src="http://placehold.it/10x10"></a>
+         <!--Может быть здесь вместо ссылок, нужно сделать кнопки? Я не знаю точно, как здесь это будет
+       работать, будет ли обновляться вся страница(тогда оставляю ссылку) или только строки будут сортироваться
+     (тогда лучше кнопку сделать)-->
+         <a href="#" class="visually-hidden"><img alt="Up" src="http://placehold.it/10x10">Сортироква по возрастанию</a>
+         <a href="#" class="visually-hidden"><img alt="Down" src="http://placehold.it/10x10">Сортироква по убыванию</a>
        </div>
     </section>
     <section class="hotels">
@@ -87,6 +116,7 @@
      </ul>
      <div class="footer-website-by">
       <p>Website by</p>
+      <!-- А здесь нужно ли делать подпись к ссылке, или достаточно alt="HTML Academy"? -->
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img alt="HTML Academy" src="img/svg/logo-htmlacademy.svg" width="115">
       </a>
      </div>
