@@ -7,21 +7,9 @@ font-family: "PT Sans", "Arial", sans-serif;
 font-weight: normal;
 color: #333333;
 text-transform: uppercase;
-
-
-background-color: white;
-background-image: url("../img/background.jpg");
-background-position: top center;
-background-repeat: no-repeat;
+background-color: #f2f2f2;
 }
 
-body.catalog {
-
-  background-image: url("../img/filter_background.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-
-}
 
 a {
   text-decoration: none;
@@ -29,6 +17,11 @@ a {
 
 ul {
   list-style: none;
+}
+
+.wrapper {
+width: 1200px;
+margin:0 auto;
 }
 
 .main-navigation {
@@ -54,20 +47,25 @@ a.current {
 }
 
 .visually-hidden {
-   visibility: hidden;
+position: absolute;
+overflow: hidden;
+clip: rect(0 0 0 0);
+height: 1px;
+width: 1px;
+margin: -1px;
+padding: 0;
+border: 0;
 }
 
 .welcome {
-  background-image: url("../img/pic-text.png");
-  background-position: top center;
+  background-image: url("../img/welcome-bottom.png"), url("../img/background.jpg");
+  background-position: bottom,  15% top;
   background-repeat: no-repeat;
-  height: 353px;
+  height: 510px;
+  text-align: center;
 }
-/*не получается спозиционировать элементы фона(фотография гор, буквы и белы зазубрины низ), как на макете*/
-.welcome-bottom {
-  background-image: url("../img/welcome-bottom.png");
-  height: 57px;
-
+.sedona-pic-text {
+  margin: 0 auto;
 }
 
 
@@ -156,6 +154,14 @@ color: rgba(225,225,225,.3);
   visibility: hidden;
 }
 
+/*==================Catalog=======================*/
+ .forms {
+   background-image: url("../img/filter_background.jpg");
+   background-position: top center;
+   background-repeat: no-repeat;
+  /* height: 217px; */
+
+ }
 .infrastructure p,
 .lodging-type p,
 .cost p:first-child {

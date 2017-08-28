@@ -7,7 +7,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="catalog">
+  <body>
+    <div class="wrapper">
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -21,6 +22,7 @@
    </header>
   <main>
      <section class="forms">
+      <form>
        <div class="infrastructure">
         <p>Инфраструктура:</p>
         <input type="checkbox" name="pool" value="pool" id="id-pool" checked>
@@ -47,6 +49,7 @@
          <!-- Я не знаю как сделать 2 ползунка range и как их привязать к значениям "от 0" и "до 3000"-->
          <input type="submit" value="Показать">
       </div>
+    </form>
      </section>
      <section class="ordering">
        <div class="result">Найдено 3</div>
@@ -123,4 +126,6 @@
       </a>
      </div>
    </footer>
-   </html>
+  </div>
+ </body>
+</html>
