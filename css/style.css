@@ -39,25 +39,29 @@ position: relative;
 
 .site-navigation {
   display: flex;
+  justify-content: space-between;
 
   align-items: center;
   list-style: none;
   height: 56px;
   margin: 0;
-  padding: 0;
+  padding: 0 72px;
 
 
 }
-.site-navigation li:nth-child(2) {
-margin-right: auto;
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+text-align: right;
 }
-.site-navigation li:nth-child(3) {
-margin-right: 91px;
+
+.site-navigation li:nth-child(2){
+padding-right: 90px;
 }
 
 .site-navigation li {
+width: 25%;
 
-margin: 0 73px;
 
 }
 
@@ -325,6 +329,10 @@ color: rgba(225,225,225,.3);
 
 .hotel-card-wrapper {
   display: flex;
+}
+
+.hotel-card-description{
+  margin-right: auto;
 }
 
 .hotel-card-description p:first-child:hover {
