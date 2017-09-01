@@ -17,12 +17,12 @@
           <li><a href="#">Карта штата</a></li>
           <li><a class="current" href="#">Гостиница</a></li>
         </ul>
-        <a><img alt="City of Sedona" src="img/logo.png"></a>
+        <a class="logo"><img alt="City of Sedona" src="img/logo.png"></a>
      </nav>
    </header>
   <main>
      <section class="forms">
-      <form>
+      <form class="filter">
        <div class="infrastructure">
         <p>Инфраструктура:</p>
         <input type="checkbox" name="pool" value="pool" id="id-pool" checked>
@@ -51,31 +51,35 @@
       </div>
     </form>
      </section>
+
      <section class="ordering">
-       <div class="result">Найдено 3</div>
-       <p>сортировка</p>
-       <ul class="ordering-type">
-         <li> <a href="#"> По цене </a> </li>
-         <li> <a href="#"> По типу </a></li>
-         <li> <a href="#"> По рейтингу </a></li>
-       </ul>
-       <div class="ordering-direction">
+       <div class="result">
+         <p>Найдено 3</p>
+         <p>сортировка</p>
+         <ul class="ordering-type">
+           <li> <a href="#"> По цене </a> </li>
+           <li> <a href="#"> По типу </a></li>
+           <li> <a href="#"> По рейтингу </a></li>
+         </ul>
+     </div>
+        <div class="ordering-direction">
          <!--Может быть здесь вместо ссылок, нужно сделать кнопки? Я не знаю точно, как здесь это будет
        работать, будет ли обновляться вся страница(тогда оставляю ссылку) или только строки будут сортироваться
      (тогда лучше кнопку сделать)-->
-         <a href="#" class="visually-hidden"><img alt="Up" src="http://placehold.it/10x10">Сортироква по возрастанию</a>
-         <a href="#" class="visually-hidden"><img alt="Down" src="http://placehold.it/10x10">Сортироква по убыванию</a>
+         <a href="#"><img alt="Up" src="http://placehold.it/10x10">Сортироква по возрастанию</a><br>
+         <a href="#"><img alt="Down" src="http://placehold.it/10x10">Сортироква по убыванию</a>
        </div>
     </section>
     <section class="hotels">
      <article class="hotel-card">
-       <div class="hotel-card-image"> <img alt="Amara Resort & Spa" src="img/hotel_pic_1.jpg"></div>
+       <div class="hotel-card-wrapper">
+         <div class="hotel-card-image"> <img alt="Amara Resort & Spa" src="img/hotel_pic_1.jpg"></div>
          <div class="hotel-card-description">
            <p>Amara Resort & Spa</p>
-           <p>Гостиница</p>
-           <p>от 3500 Р.</p>
+           <p><span>Гостиница</span><span> от 3500 Р.</span></p>
            <a class="hotel-card-detail" href="#">Подробнее</a>
            <a class="hotel-card-book" href="#">Забронировать</a>
+         </div>
          </div>
          <div class="hostel-card-rating">
            <img alt ="4 stars" src="http://placehold.it/30x15"> <!--Картинка со звёздами-->
@@ -83,34 +87,37 @@
          </div>
     </article>
     <article class="hotel-card">
+      <div class="hotel-card-wrapper">
       <div class="hotel-card-image"><img alt="Desert Quail Inn" src="img/hotel_pic_2.jpg"></div>
         <div class="hotel-card-description">
           <p>Desert Quail Inn</p>
-          <p>Мотель</p>
-          <p>от 2000 Р.</p>
+          <p><span>Мотель</span><span> от 2000 Р.</span></p>
           <a class="hotel-card-detail" href="#">Подробнее</a>
           <a class="hotel-card-book" href="#">Забронировать</a>
         </div>
+      </div>
         <div class="hostel-card-rating">
           <img alt="2 stars" src="http://placehold.it/30x15"> <!--Картинка со звёздами-->
           <p>Рейтинг 8,9</p>
         </div>
    </article>
    <article class="hotel-card">
+     <div class="hotel-card-wrapper">
      <div class="hotel-card-image"><img alt="Villas At Poco Diablo" src="img/hotel_pic_3.jpg"></div>
        <div class="hotel-card-description">
          <p>Villas At Poco Diablo</p>
-         <p>Апартаменты</p>
-         <p>от 4000 Р.</p>
+         <p><span>Апартаменты</span><span> от 4000 Р.</span></p>
          <a class="hotel-card-detail" href="#">Подробнее</a>
          <a class="hotel-card-book" href="#">Забронировать</a>
        </div>
+      </div>
        <div class="hostel-card-rating">
          <img alt="3 stars" src="http://placehold.it/30x15"> <!--Картинка со звёздами-->
          <p>Рейтинг 9,2</p>
        </div>
   </article>
 </section>
+
 </main>
    <footer class="main-footer">
      <p class="footer-hashtag">#Visitsedona</p>

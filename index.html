@@ -17,16 +17,17 @@
           <li><a href="#">Карта штата</a></li>
           <li><a href="catalog.html">Гостиница</a></li>
         </ul>
-        <a><img alt="City of Sedona" src="img/logo.png"></a>
+        <a class="logo"><img alt="City of Sedona" src="img/logo.png"></a>
+
      </nav>
    </header>
     <main class="container">
       <section class="welcome">
         <h1 class="visually-hidden">Седона</h1>
-        <img class="sedona-pic-text" src="img/pic-text.png"></img>
+        <img class="sedona-pic-text" alt="Welcome to Sedona" src="img/pic-text.png">
       </section>
       <div class="introduction">
-      <b class="description-sedona">Седона-небольшой городок в Аризоне, заслуживающий большего.</b>
+      <b class="description-sedona">Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</b>
       <p class="reason-introduction">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
      </div>
       <section class="reason">
@@ -40,17 +41,17 @@
         <section class="features">
         <ul class="features-list">
           <li class="features-item">
-            <div class="infographic-house"></div>
+
             <h2 class="feature-name">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="features-item">
-            <div class="infographic-burger"></div>
+
             <h2 class="feature-name">Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
          </li>
          <li class="features-item">
-           <div class="infographic-souvenirs"></div>
+
            <h2 class="feature-name">Сувениры</h2>
            <p>Не только китайского, но и местного производства!</p>
         </li>
@@ -64,6 +65,7 @@
         </div>
         <img alt="The Devil's Bridge" src="img/devils_bridge.jpg">
       </section>
+      <section class="reason">
         <div class="reason-detail">
           <h3 class="reason-name">Небольшая площадь</h3>
           <p>-№3-</p>
@@ -79,10 +81,16 @@
           <p>-№5-</p>
           <p>Большинство едет в Гранд Каньон и толпится там </p>
         </div>
-        <b class="hotel-search"> Заинтересовались </b>
+      </section>
+        <div class="before-hotel-search">
+        <div>
+          <b class="hotel-search"> Заинтересовались </b>
         <p class="expected-date"> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
+        </div>
+        <input type="button" value="Поиск гостиницы в Седоне">
+        </div>
         <form class="hostel-search-form" action="https://echo.htmlacademy.ru" method="get">
-          <p>Поиск гостиницы в Седоне</p>
+
           <label for="id-date-from">Дата заезда:</label>
           <input type="text" name="date-from" id="id-date-from" value="24 апреля 2016">
           <button>Календарь</button>
