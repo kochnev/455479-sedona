@@ -22,6 +22,7 @@ a {
 width: 1200px;
 margin:0 auto;
 background-color: white;
+position: relative;
 }
 
 .main-navigation {
@@ -56,11 +57,15 @@ text-align: right;
 }
 
 .site-navigation li:nth-child(2){
-padding-right: 90px;
+padding-right: 120px;
+}
+
+.site-navigation li:nth-child(3){
+padding-right: 4px;
 }
 
 .site-navigation li {
-width: 25%;
+width: 20%;
 
 
 }
@@ -96,25 +101,27 @@ border: 0;
 
 .welcome {
   background-image: url("../img/welcome-bottom.png"), url("../img/background.jpg");
-  background-position: bottom, 0px -55px;
+  background-position: bottom, 0px -56px;
   background-repeat: no-repeat,no-repeat;
-  height: 510px;
+  height: 508px;
   text-align: center;
 }
 .sedona-pic-text {
   margin: 0 auto;
-  padding-top: 77px;
+  padding-top: 76px;
 }
 
 .introduction {
   text-align: center;
-
-  height: 216px;
+  box-sizing: border-box;
+  padding-top: 61px;
+  height: 216px; /*оставила здесь height, так как когда ставлю min-height, то блок,
+  лежащий внизу отодвигается вниз на некоторое количество пикселей непонятно почему,
+  как-будто-бы у него появляется margin сверху, который нигде не задан. Не знаю, как с этим справиться*/
 
 }
 
 .description-sedona,
-.hostel-search-form p,
 .footer-hashtag,
 .result p:first-child,
 .hotel-card-description p:first-child {
@@ -127,6 +134,7 @@ border: 0;
 .reason {
 display: flex;
 
+
 }
 .features-list {
 display: flex;
@@ -135,43 +143,117 @@ display: flex;
 
 
 
-.reason-introduction
+.reason-introduction,
 .footer-website-by p {
   line-height: 26px;
 }
 
+.reason-introduction {
+  margin-top: 27px;
+}
+
+
+
 .feature-name,
 .reason-name{
+
   font-size: 21px;
   font-weight: bold;
   color: #000000;
+}
+.reason-name{
+  margin-top: 48px;
+  margin-bottom: 23px;
 }
 
 .reason-detail-pic {
   background-color: #81b3d2;
   color: white;
   text-align: center;
+  padding: 0 60px;
+}
+
+.reason-detail-pic p:nth-child(3) {
+
+margin-top: 21px;
+
 }
  .reason-detail-pic .reason-name {
    color: white;
 }
 
 .reason-detail{
-
-
-  width: 400px;
-  height: 256px;
+  width: 33%;
   background-color: #eeeeee;
   text-align: center;
+  padding: 0 58px;
+}
+.reason-detail p:nth-child(3) {
+  margin-top: 21px;
+  margin-bottom: 59px;
+}
+
+/*.features {
+  height: 330px;
+}*/
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .features-item{
-  text-align: center;
+   position: relative;
+   text-align: center;
+   width: 33%;
+   padding: 0 58px;
+
+}
+.features-item p {
+  margin-bottom: 82px;
 }
 
-.features-item:before {
-  background-image: url("../img/svg/icon-1.svg"); <!-- Тут остановилась -->
+.feature-name{
+ margin-top: 162px;
+ margin-bottom: 23px;
+
 }
+
+.house::before {
+background-image: url("../img/svg/icon-1.svg");
+left: 163px;
+top: 60px;
+}
+
+.food::before {
+background-image: url("../img/svg/icon-3.svg");
+left: 159px;
+top: 60px;
+}
+
+.souvenir::before {
+background-image: url("../img/svg/icon-2.svg");
+left: 169px;
+top: 56px;
+}
+
+
+
+.feature-name::before {
+
+display: block;
+content: "";
+width: 80px;
+height: 80px;
+background-repeat: no-repeat;
+position: absolute;
+
+}
+
+
+
+
 
 .before-hotel-search {
   height: 291px;
@@ -179,6 +261,7 @@ display: flex;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .before-hotel-search input[type="button"]{
@@ -194,6 +277,59 @@ display: flex;
   margin: 0 auto;
 }
 
+.hotel-search {
+  margin-top: 52px;
+  margin-bottom: -24px;
+}
+
+.before-hotel-search input[type="button"]{
+font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.hostel-search-form {
+  position: absolute;
+  top: 291px;
+  left: 316px;
+  background-color: white;
+  width: 569px;
+  height: 395px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 55px;
+  justify-content: space-between;
+}
+
+.hostel-search-form p{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.hostel-search-form .adults,
+.hostel-search-form .kids {
+  width: 50%;
+}
+.hostel-search-form input[type="text"]{
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  padding-left: 13px;
+}
+
+
+.calendar {
+  position: absolute;
+  right: 0;
+}
+
+
+
 .hotel-search,
 .hostel-search-form input[type="submit"]{
   font-size: 30px;
@@ -202,8 +338,14 @@ display: flex;
   color: #000000;
 }
 
+.hostel-search-form input[type="submit"]{
+font-family: "PT Sans", "Arial", sans-serif;
+}
+
 .expected-date {
   line-height: 26px;
+  padding: 0 380px;
+  line-height: 24px;
 }
 
 .hostel-search-form label,
@@ -212,6 +354,26 @@ display: flex;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+.hostel-search-form input[type="number"]{
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: #f2f2f2;
+  padding-left: 14px;
+  box-sizing: border-box;
+
+}
+.adults button,
+.kids button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 20px;
+  font-weight: bold;
+
 }
 
 .hostel-search-form input[type="submit"] {
@@ -236,10 +398,34 @@ color: rgba(225,225,225,.3);
 
 .main-footer {
   display: flex;
+  width: 1200px;
+  height: 126px;
   justify-content: space-around;
+  position: absolute;
+  background-color: rgba(255,255,255,.6);
+  bottom: 0px;
+}
+
+.footer-hashtag {
+  margin-top: 47px;
+
+}
+
+
+.social-button {
+  display: flex;
+  background-color: #81b3d2;
+  width: 47px;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .footer-social {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
