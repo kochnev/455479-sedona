@@ -340,7 +340,7 @@ font-family: "PT Sans", "Arial", sans-serif;
   width: 332px;
   height: 37px;
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid #f2f2f2;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   padding-left: 13px;
@@ -349,6 +349,7 @@ font-family: "PT Sans", "Arial", sans-serif;
 
 .hostel-search-form .input-date:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .hostel-search-form .input-date:focus {
@@ -548,34 +549,192 @@ fill: #88b6d1;
 
 .filter {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     height: 217px;
+    padding: 28px 73px;
+    box-sizing: border-box;
+  }
+
+  .filter-column {
+    width: 253px;
+  }
+
+  .cost{
+    margin-left: auto;
   }
 
 
-.infrastructure p,
-.lodging-type p,
-.cost p:first-child {
+.filter-column p:first-child {
   font-size: 16px;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 23px;
   }
 
-  .cost input[type="submit"] {
-    color: white;
-    background-color: transparent;
-    border-color: white;
-    border-width: 2px;
-    border-radius: 2px;
-    padding: 11px 35px;
-    text-transform: uppercase;
-  }
-  .cost input[type="submit"]:hover {
-    background-color: white;
-    color: black;
+  .cost p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    }
+
+
+  .filter-column label{
+    display: block;
+    position: relative;
+    padding-left: 39px;
+    margin-bottom: 25px;
   }
 
+  .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/svg/checkbox-off.svg");
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 24px;
+}
+
+.filter-column input[type="checkbox"]:checked + .checkbox-indicator {
+  background-image: url("../img/svg/checkbox-on.svg");
+}
+
+  
 .forms {
   color: white;
+}
+
+
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+
+}
+
+.price-controls {
+  position: relative;
+  height: 35px;
+  width: 316px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  box-sizing: border-box;
+
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+line-height: 32px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price{
+  width: 90px;
+  padding-left: 50px;
+
+
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+  font: inherit;
+  margin-right: 92px;
+  margin-left: auto;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 
