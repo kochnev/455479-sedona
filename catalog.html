@@ -24,7 +24,7 @@
     </header>
     <main>
       <section class="forms">
-        <form class="filter">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-column">
             <p>Инфраструктура:</p>
             <label>
@@ -39,11 +39,10 @@
               Парковка
             </label>
             <label>
-              <input type="checkbox" name="wi-fi" value="wi-fi" class="visually-hidden">
+              <input type="checkbox" name="wi-fi" value="wi-fi" class="visually-hidden" disabled>
                 <span class="checkbox-indicator"></span>
                 Wi-Fi
               </label>
-
           </div>
           <div class="filter-column">
             <p>Тип жилья:</p>
@@ -58,7 +57,7 @@
             Мотель
             </label>
             <label>
-            <input type="checkbox" name="apartments" value="apartments" class="visually-hidden" checked>
+            <input type="checkbox" name="apartments" value="apartments" class="visually-hidden" checked disabled>
             <span class="checkbox-indicator"></span>
             Апартаменты
           </label>
@@ -95,8 +94,8 @@
           <!--Может быть здесь вместо ссылок, нужно сделать кнопки? Я не знаю точно, как здесь это будет
        работать, будет ли обновляться вся страница(тогда оставляю ссылку) или только строки будут сортироваться
      (тогда лучше кнопку сделать)-->
-          <a class="direction" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg><span class="visually-hidden">Сортироква по возрастанию<span></a><br>
-          <a class="active-direction"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg><span class="visually-hidden">Сортироква по убыванию<span></a>
+          <a class="direction" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg><span class="visually-hidden">Сортироква по возрастанию</span></a><br>
+          <a class="active-direction"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg><span class="visually-hidden">Сортироква по убыванию</span></a>
         </div>
       </section>
       <section class="hotels">

@@ -33,12 +33,12 @@
         <p class="reason-introduction">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <section class="reason">
-        <div class="reason-detail-pic">
+        <div class="reason-detail-pic reason-1">
           <h3 class="reason-name">Настоящий <br> городок</h3>
           <p>— №1 —</p>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img alt="Sedona" src="img/sedona_house.jpg">
+        <img alt="Sedona" width="800" height="256" src="img/sedona_house.jpg">
       </section>
       <section class="features">
         <ul class="features-list">
@@ -60,8 +60,8 @@
         </ul>
       </section>
       <section class="reason">
-        <img alt="The Devil's Bridge" src="img/devils_bridge.jpg">
-        <div class="reason-detail-pic">
+        <img alt="The Devil's Bridge" width="800" height="256" src="img/devils_bridge.jpg">
+        <div class="reason-detail-pic reason-2">
           <h3 class="reason-name">Там есть <br>мост дьявола</h3>
           <p>— №2 —</p>
           <p>Да. По нему можно пройти! Если конечно вы осмeлитесь</p>
@@ -69,17 +69,17 @@
 
       </section>
       <section class="reason">
-        <div class="reason-detail">
+        <div class="reason-detail reason-3">
           <h3 class="reason-name">Небольшая <br>площадь</h3>
           <p>— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
-        <div class="reason-detail">
+        <div class="reason-detail reason-4">
           <h3 class="reason-name">Красивая<br> дорога</h3>
           <p>— №4 —</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-        <div class="reason-detail">
+        <div class="reason-detail reason-5">
           <h3 class="reason-name">Мало <br>туристов</h3>
           <p>— №5 —</p>
           <p>Большинство едет в Гранд Каньон и толпится там </p>
@@ -90,32 +90,32 @@
         <b class="hotel-search"> Заинтересовались? </b>
         <p class="expected-date"> Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне </p>
 
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <a href="sedona-search.html">Поиск гостиницы в Седоне</a>
         <form class="hostel-search-form" action="https://echo.htmlacademy.ru" method="get">
           <p>
             <label for="id-date-from">Дата заезда:</label>
-            <input class="input-date" type="text" name="date-from" id="id-date-from" value="24 апреля 2016">
+            <input class="input-date" type="text" name="date-from" id="id-date-from" value="24 апреля 2017">
             <button type="button" class="calendar"><span class="visually-hidden">Календарь</span></button>
           </p>
           <p>
             <label for="id-date-to">Дата выезда:</label>
-            <input class="input-date" type="text" name="date-to" id="id-date-to" value="4 июля 2016">
+            <input class="input-date" type="text" name="date-to" id="id-date-to" value="4 июля 2017">
             <button type="button" class="calendar"><span class="visually-hidden">Календарь</span></button>
           </p>
           <p class="adults">
             <label for="adults">Взрослые:</label>
             <span class="count-control">
-                  <button type="button">-</button>
-                  <input type="text" min="1" max="30" id="adults" name="adult" value="2">
-                  <button type="button">+</button>
-                </span>
+                  <button type="button"><span class="visually-hidden">Минус</span>&#x2212;</button>
+                  <input type="text" id="adults" name="adult" value="2">
+                  <button type="button"><span class="visually-hidden">Плюс</span>+</button>
+            </span>
           </p>
           <p class="kids">
             <label for="kids">Дети:</label>
             <span class="count-control">
-                  <button type="button">-</button>
-                  <input type="text" min="0" max="30" id="kids" name="kids" value="0">
-                  <button type="button">+</button>
+                  <button type="button"><span class="visually-hidden">Минус</span>&#x2212;</button>
+                  <input type="text" id="kids" name="kids" value="0">
+                  <button type="button"><span class="visually-hidden">Плюс</span>+</button>
                 </span>
           </p>
           <p>
