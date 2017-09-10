@@ -278,20 +278,13 @@ position: absolute;
 .before-hotel-search {
   height: 291px;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
+  box-sizing: border-box;
+  padding-top: 52px;
 }
 
 .before-hotel-search>a {
+  display: block;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -314,11 +307,6 @@ position: absolute;
 .before-hotel-search>a:active {
   background-color: #503e33;
   color: rgba(255,255,255,.3);
-}
-
-.hotel-search {
-  margin-top: 52px;
-  margin-bottom: -24px;
 }
 
 .hostel-search-form {
@@ -430,6 +418,8 @@ position: absolute;
   line-height: 36px;
   font-weight: bold;
   color: #000000;
+  display: block;
+  margin-bottom: 23px;
 }
 
 .hostel-search-form input[type="submit"]{
@@ -454,6 +444,7 @@ padding-top: 6px;
   line-height: 26px;
   padding: 0 380px;
   line-height: 24px;
+  margin-bottom: 46px;
 }
 
 .hostel-search-form label,
@@ -722,7 +713,7 @@ fill: #88b6d1;
   display: inline-block;
 
   font-size: 14px;
-line-height: 32px;
+  line-height: 28px;
   vertical-align: top;
 
   cursor: pointer;
