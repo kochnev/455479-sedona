@@ -98,9 +98,6 @@ a {
     box-sizing: border-box;
     padding-top: 61px;
     height: 216px;
-    /*оставила здесь height, так как когда ставлю min-height, то блок,
-  лежащий внизу отодвигается вниз на некоторое количество пикселей непонятно почему,
-  как-будто-бы у него появляется margin сверху, который нигде не задан. Не знаю, как с этим справиться*/
 }
 .description-sedona,
 .footer-hashtag,
@@ -350,7 +347,6 @@ a {
     text-transform: uppercase;
     color: white;
     background-color: #81b3d2;
-    /*padding: 21px 196px;*/
 
     border: none;
     width: 458px;
@@ -409,10 +405,6 @@ a {
     background-color: #5496bd;
     color: rgba(225, 225, 225, .3);
 }
-/*.social-button{
-  visibility: hidden;
-}*/
-
 .main-footer-index {
     display: -webkit-box;
     display: -ms-flexbox;
