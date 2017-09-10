@@ -264,7 +264,7 @@ top: 56px;
 
 
 
-.feature-name::before {
+.features-item::before {
 
 display: block;
 content: "";
@@ -737,6 +737,8 @@ fill: #88b6d1;
 
   color: inherit;
   font: inherit;
+
+  line-height: 20px;
 
   background: none;
   border: none;
