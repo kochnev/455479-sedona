@@ -485,6 +485,7 @@ a {
 /*==================Catalog=======================*/
 
 .forms {
+    background-color: #6f6162;
     background-image: url("../img/filter_background.jpg");
     background-position: center -50px;
     background-repeat: no-repeat;
