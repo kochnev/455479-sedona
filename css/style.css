@@ -693,6 +693,7 @@ a {
     font-size: 12px;
     line-height: 18px;
     display: inline-block;
+    vertical-align: top;
 }
 .ordering-type a {
     color: rgba(0, 0, 0, .3);
@@ -789,6 +790,7 @@ a.active {
     display: inline-block;
     width: 80px;
     margin-right: 32px;
+    vertical-align: top;
 }
 .hotel-card-detail,
 .hotel-card-book {
