@@ -87,12 +87,11 @@
                 </div>
             </section>
             <div class="before-hotel-search">
-
                 <b class="hotel-search"> Заинтересовались? </b>
                 <p class="expected-date"> Укажите предполагаемые даты поездки,
-                    <br> и мы покажем вам лучшие предложения гостиниц в Седоне </p>
-
-                <a href="sedona-search.html">Поиск гостиницы в Седоне</a>
+                    <br> и мы покажем вам лучшие предложения гостиниц в Седоне
+                </p>
+                <a href="sedona-search.html" class="search-button">Поиск гостиницы в Седоне</a>
                 <form class="hostel-search-form" action="https://echo.htmlacademy.ru" method="get">
                     <p>
                         <label for="id-date-from">Дата заезда:</label>
@@ -112,6 +111,7 @@
                         <button type="button"><span class="visually-hidden">Минус</span>&#x2212;</button>
                         <input type="text" id="adults" name="adult" value="2">
                         <button type="button"><span class="visually-hidden">Плюс</span>+</button>
+
                         </span>
                     </p>
                     <p class="kids">
@@ -127,7 +127,10 @@
                     </p>
                 </form>
             </div>
-            <img alt="Sedona-map" width="1200" height="593" src="img/map.jpg">
+            <div class="map-wrapper">
+                <img alt="Sedona-map" width="1200" height="593" src="img/map.jpg">
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836899.128107416!2d-112.25931305379602!3d34.978227485682176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1505314448526" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </main>
         <footer class="main-footer-index">
             <p class="footer-hashtag">#Visitsedona</p>
@@ -165,6 +168,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/sedona.min.js"></script>
 </body>
 
 </html>

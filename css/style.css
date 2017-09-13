@@ -217,11 +217,13 @@ a {
     height: 291px;
     text-align: center;
     position: relative;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 52px;
 }
 .before-hotel-search>a {
     display: block;
+    position: relative;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -235,6 +237,7 @@ a {
     padding-top: 31px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    z-index: 2;
 }
 .before-hotel-search>a:hover {
     background-color: #604e43;
@@ -250,9 +253,7 @@ a {
     background-color: white;
     width: 569px;
     height: 395px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-sizing: border-box;
@@ -263,6 +264,96 @@ a {
     justify-content: space-between;
     -ms-flex-line-pack: justify;
     align-content: space-between;
+}
+.hostel-search-form-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: bounce 0.6s;
+    animation: bounce 0.6s;
+    z-index: 1;
+}
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-86px);
+        transform: translateY(-86px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-86px);
+        transform: translateY(-86px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+@keyframes shake {
+    0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+.input-error {
+    -webkit-animation: shake 0.6s;
+    animation: shake 0.6s;
 }
 .hostel-search-form p {
     position: relative;
@@ -347,7 +438,6 @@ a {
     text-transform: uppercase;
     color: white;
     background-color: #81b3d2;
-
     border: none;
     width: 458px;
     height: 58px;
@@ -404,6 +494,17 @@ a {
 .hostel-search-form input[type="submit"]:active {
     background-color: #5496bd;
     color: rgba(225, 225, 225, .3);
+}
+.map-wrapper {
+    position: relative;
+}
+.map-wrapper img {
+    position: relative;
+}
+.google-map {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .main-footer-index {
     display: -webkit-box;
@@ -675,8 +776,7 @@ a {
     height: 86px;
     padding: 0 73px;
 }
-.ordering p
-{
+.ordering p {
     font-size: 12px;
     line-height: 18px;
 }
