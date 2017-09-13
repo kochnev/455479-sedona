@@ -83,6 +83,7 @@ a {
 }
 .welcome {
     background-image: url("../img/welcome-bottom.png"), url("../img/background.jpg");
+    background-color: #2b576b;
     background-position: bottom, 0px -56px;
     background-repeat: no-repeat, no-repeat;
     height: 508px;
